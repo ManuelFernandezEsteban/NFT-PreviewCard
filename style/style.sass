@@ -12,8 +12,115 @@ $colorWhite:hsl(0, 0%, 100%)
 $fuente:Outfit
 $font-weights: ("regular":400,"light":300,"bold":600)
 
+body
+    margin: 0
+    padding: 0
+    font-family: $fuente
+    font-size: 16px
+
+.contenedor-general  
+    display: flex
+    flex-direction: column
+    padding: 30px
+    background-color: $colorDarkBlueMain
+    
+
 .contenedor
+    width: 300px
+    align-self: center
+    display: flex
+    flex: 1
+    flex-direction: column    
+    background-color: $colorDarkBlueCard
+    border-radius: 15px
+    padding: 20px
+    h2  
+        font-weight: bold
+        color: $colorWhite 
+        cursor: pointer
+        &:hover
+            color: $colorCyan               
     p
-        font-family: $fuente
-        font-size: 18px
+        font-family: $fuente        
+        font-weight: 300
+        text-align: start
+        margin-top: -5px
+        color: $colorSoftBlue 
+        letter-spacing: 1px
+        line-height: 30px        
+.imagen
+    z-index: 1
+    width: 300px 
+    &:hover
+            z-index: 1 
+            opacity: 0.55 
+.contenedor-imagen   
+    height: 300px     
+    img 
+        position: absolute
+               
+        border-radius: 10px        
+        cursor: pointer 
+           
+.eye 
+    background-color: $colorCyan    
+    width: 300px    
+    
+.contenedor-precio-tiempo    
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+
+.precio , .tiempo
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: flex-start
+    
+   
+.tiempo
+    align-self: center
+    margin-right: 20px
+    color: $colorSoftBlue   
+    span
+        margin-left: 5px
+    
+.precio
+    align-self: center
+    color: $colorCyan
+    font-weight: bold
+    span
+        margin-left: 5px
+
+.line
+    border: solid 0.1px $colorWhite        
+    margin-top: 15px
+    opacity: 0.3
+    color: $colorWhite
+
+.creation
+    display: inline-flex
+    align-content: baseline
+    justify-content: start    
+    margin-top: 20px
+    img        
+        width: 40px
+        border: 1px solid $colorWhite
+        border-radius: 100%
+.texto
+    color: $colorSoftBlue
+    flex: 1
+.name
+    color: $colorWhite
+    flex: 1
+    cursor: pointer
+    &:hover        
+        color: $colorCyan
+        
+.atribucion
+    flex:1
+    align-self: center
+    margin-left: 15px
+
+
         

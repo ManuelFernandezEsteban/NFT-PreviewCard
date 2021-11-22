@@ -1,7 +1,137 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Outfit:wght@300;400;600&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Outfit;
+  font-size: 16px;
+}
+
+.contenedor-general {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background-color: #0d192b;
+}
+
+.contenedor {
+  width: 300px;
+  align-self: center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background-color: #14253d;
+  border-radius: 15px;
+  padding: 20px;
+}
+.contenedor h2 {
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+.contenedor h2:hover {
+  color: #00fff7;
+}
 .contenedor p {
   font-family: Outfit;
-  font-size: 18px;
+  font-weight: 300;
+  text-align: start;
+  margin-top: -5px;
+  color: #8bacda;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+
+.imagen {
+  z-index: 1;
+  width: 300px;
+}
+.imagen:hover {
+  z-index: 1;
+  opacity: 0.55;
+}
+
+.contenedor-imagen {
+  height: 300px;
+}
+.contenedor-imagen img {
+  position: absolute;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.eye {
+  background-color: #00fff7;
+  width: 300px;
+}
+
+.contenedor-precio-tiempo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.precio, .tiempo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.tiempo {
+  align-self: center;
+  margin-right: 20px;
+  color: #8bacda;
+}
+.tiempo span {
+  margin-left: 5px;
+}
+
+.precio {
+  align-self: center;
+  color: #00fff7;
+  font-weight: bold;
+}
+.precio span {
+  margin-left: 5px;
+}
+
+.line {
+  border: solid 0.1px white;
+  margin-top: 15px;
+  opacity: 0.3;
+  color: white;
+}
+
+.creation {
+  display: inline-flex;
+  align-content: baseline;
+  justify-content: start;
+  margin-top: 20px;
+}
+.creation img {
+  width: 40px;
+  border: 1px solid white;
+  border-radius: 100%;
+}
+
+.texto {
+  color: #8bacda;
+  flex: 1;
+}
+
+.name {
+  color: white;
+  flex: 1;
+  cursor: pointer;
+}
+.name:hover {
+  color: #00fff7;
+}
+
+.atribucion {
+  flex: 1;
+  align-self: center;
+  margin-left: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
